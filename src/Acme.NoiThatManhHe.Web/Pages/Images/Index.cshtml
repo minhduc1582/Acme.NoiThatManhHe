@@ -1,0 +1,27 @@
+﻿@page
+@model Acme.NoiThatManhHe.Web.Pages.Images.IndexModel
+@using Acme.NoiThatManhHe.Web.Pages.Images
+@section scripts
+{
+    <abp-script src="/Pages/Images/Index.js">
+    </abp-script>
+}
+<input type="hidden" id="custId" name="custId" value="@Model.GenericId">
+<abp-card>
+    <abp-card-header>
+        <abp-row>
+            <abp-column size-md="_6">
+                <abp-card-title>Image</abp-card-title>
+            </abp-column>
+            <abp-column size-md="_6" class="text-right">
+                    <abp-button id="NewImageButton"
+                                text="New Image"
+                                icon="plus"
+                                button-type="Primary"/>
+            </abp-column>
+        </abp-row>
+    </abp-card-header>
+    <abp-card-body>
+        <abp-table striped-rows="true" id="ImagesTable"></abp-table>
+    </abp-card-body>
+</abp-card>

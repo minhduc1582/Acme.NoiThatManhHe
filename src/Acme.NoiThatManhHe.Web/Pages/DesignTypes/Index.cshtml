@@ -1,0 +1,19 @@
+﻿@page
+@model Acme.NoiThatManhHe.Web.Pages.DesignTypes.IndexModel
+@using Acme.NoiThatManhHe.Web.Pages.Designs
+@section scripts
+{
+    <abp-script src="/Pages/DesignTypes/Index.js" />
+}
+<abp-card>
+    <abp-card-header>
+        <abp-row>
+            <abp-column size-md="_6">
+                <abp-card-title>Design Type</abp-card-title>
+            </abp-column>
+        </abp-row>
+    </abp-card-header>
+    <abp-card-body>
+        <abp-table striped-rows="true" id="DesignTypesTable"></abp-table>
+    </abp-card-body>
+</abp-card>

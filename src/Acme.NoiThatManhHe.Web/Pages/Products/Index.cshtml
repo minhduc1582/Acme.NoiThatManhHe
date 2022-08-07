@@ -1,0 +1,25 @@
+﻿@page
+@using Acme.NoiThatManhHe.Web.Pages.Products
+@model Acme.NoiThatManhHe.Web.Pages.Products.IndexModel
+@section scripts
+{
+    <abp-script src="/Pages/Products/Index.js" />
+}
+<abp-card>
+    <abp-card-header>
+        <abp-row>
+            <abp-column size-md="_6">
+                <abp-card-title>Products</abp-card-title>
+            </abp-column>
+            <abp-column size-md="_6" class="text-right">
+                    <abp-button id="NewProductButton"
+                                text="New Product"
+                                icon="plus"
+                                button-type="Primary"/>
+            </abp-column>
+        </abp-row>
+    </abp-card-header>
+    <abp-card-body>
+        <abp-table striped-rows="true" id="ProductsTable"></abp-table>
+    </abp-card-body>
+</abp-card>

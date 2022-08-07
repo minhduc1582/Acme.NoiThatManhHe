@@ -1,0 +1,26 @@
+﻿@page
+@model Acme.NoiThatManhHe.Web.Pages.Designs.IndexModel
+@using Acme.NoiThatManhHe.Web.Pages.Designs
+@section scripts
+{
+    <abp-script src="/Pages/Designs/Index.js" />
+}
+<input type="hidden" id="custId" name="custId" value="@Model.DesignTypeId">
+<abp-card>
+    <abp-card-header>
+        <abp-row>
+            <abp-column size-md="_6">
+                <abp-card-title>Design</abp-card-title>
+            </abp-column>
+            <abp-column size-md="_6" class="text-right">
+                    <abp-button id="NewDesignButton"
+                                text="New Design"
+                                icon="plus"
+                                button-type="Primary"/>
+            </abp-column>
+        </abp-row>
+    </abp-card-header>
+    <abp-card-body>
+        <abp-table striped-rows="true" id="DesignsTable"></abp-table>
+    </abp-card-body>
+</abp-card>

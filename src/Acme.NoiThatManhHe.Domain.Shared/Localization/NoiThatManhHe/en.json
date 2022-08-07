@@ -1,0 +1,9 @@
+{
+  "culture": "en",
+  "texts": {
+    "Menu:Home": "Home",
+    "Welcome": "Welcome",
+    "LongWelcomeMessage": "Welcome to the Noi That Manh He. This is a startup project based on the ABP framework. For more information, visit abp.io.",
+    "ProductDeletionConfirmationMessage": "Are you sure to delete the product '{0}'?"
+  }
+}

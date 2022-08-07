@@ -1,0 +1,16 @@
+﻿@page
+@model Acme.NoiThatManhHe.Web.Pages.Designs.CreateModalModel
+@using Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.TagHelpers.Modal
+@using Acme.NoiThatManhHe.Web.Pages.Designs
+@{
+    Layout = null;
+}
+<abp-dynamic-form abp-model="Design" asp-page="/Designs/CreateModal">
+    <abp-modal>
+        <abp-modal-header title="New Design"></abp-modal-header>
+        <abp-modal-body>
+            <abp-form-content />
+        </abp-modal-body>
+        <abp-modal-footer buttons="@(AbpModalButtons.Cancel|AbpModalButtons.Save)"></abp-modal-footer>
+    </abp-modal>
+</abp-dynamic-form>
